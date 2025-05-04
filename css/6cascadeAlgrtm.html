@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Cascade_Algorithm</title>
+        <style>
+            .a{
+                color: green;
+            }
+            .b{
+                color: red;
+            }
+            .c{
+                color: rgb(89, 207, 134);
+            }
+            .d{
+                color: mediumvioletred !important;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Cascade_Algorithm</h1>
+        <article>if the element deifined by same style by many ways like <br/>
+            color of p will be black next red next.. solved by cascading algorithm</article>
+        <ol>
+            <li>position:</li>
+            <blockquote><p class="a b">if selectors are same type last positioned style will be ovveride</p></blockquote>
+            <li>specificity: large valued can ovveride</li>
+            <blockquote><p class="a b c">specifies priority (high to low)<br/>
+                           important(10000)-> inline(1000) -> id(100) -> class or attrribute or pseudo(10) -> element(1) -> universal(0)</p>
+                            <p style="color:gold;" class="a b c">inline domination</p>
+                            <p style="color:gold;" class="a b c d">important domination</p></blockquote>
+            <li>order:</li>
+            <blockquote><p class="a ">browser add some styles by user agent style sheets it can ovveride by source code</p></blockquote>
+                
+        </ol>
+    </body>
+</html>

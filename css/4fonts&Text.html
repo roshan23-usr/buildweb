@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>fonts & text</title>
+        <style>
+            h1{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', ;
+                font-size: 30px;
+                font-weight: 600;
+                font-style: italic;
+            }
+            #a{
+                text-align: center;
+                text-decoration:underline;
+                text-decoration-color: rgb(239, 67, 4);
+                text-decoration-style: wavy;
+                text-decoration-thickness: 7px;
+            }
+            div{
+                text-transform: capitalize;
+            }
+            .a{
+                border: 2px solid red;
+                width: 10px;
+                text-transform: uppercase;
+                text-overflow:ellipsis;
+                overflow: hidden;
+            }
+            .b{
+                border: 2px solid red;
+                width:100px;
+                text-transform: uppercase;
+                text-overflow:clip;
+                word-break: break-all;
+                text-indent: 40px;
+            }
+            .c{
+                border: 2px solid red;
+                width:100px;
+                text-transform: uppercase;
+                text-overflow:clip;
+                word-break:normal;
+                text-indent: 40px;
+            }
+            #b{
+                line-height:60px;
+                letter-spacing: 20 px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>fonts</h1>
+        <h1>JAI TELANGANA</h1>
+
+        <h1>TEXT</h1>
+
+        <p id="a">jai TELANGANA</p>
+        <div>good MoRning</div>
+        <div class="a">good MoRning guys how are u</div><br/><br/>
+        <div class="b">good MoRning guys how are u</div><br/><br/>
+        <div class="c">good MoRning guys how are u</div>
+        <p id="b">ROSHAN<br/>
+                  roshan</p>
+    </body>
+</html>

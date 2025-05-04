@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>colors</title>
+        <STYle>
+           h1{
+            text-align: start;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+           }
+           .a{
+            background-color: aqua;
+           }
+           .b{
+            background-color: rgb(210, 110, 20);
+           }
+           .c{
+            background-color: rgba(210, 110, 20, 20%);
+           }
+           .d{
+            background-color: #00f00f;
+           }
+           .e{
+            background-color: hsl(100,30%,50%);
+           }
+           .f{
+            background-color: hsla(100, 30%, 50%, 20%);
+           }
+        </STYle>
+    </head>
+    <body>
+        <h1>colors</h1>
+        <p>colors are difined by:</p>
+        <ol>
+            <li>color keyword</li>
+            <blockquote><p class="a">defined by color name red, blue....</p></blockquote>
+            <li>RGB(x, y, z) </li>
+            <blockquote><p class="b">defined by Red, Green, blue combination with given importance</p></blockquote>
+            <li>RGBA(w, x, y, z) </li>
+            <blockquote><p class="c">defined by Red, Green, blue, Alpha=blur combination with given importance</p></blockquote>
+            <li>Hexa code</li>
+            <blockquote><p class="d">defined by hexa code like #00ff00</p></blockquote>
+            <li>HSL(x, y%, z%)</li>
+            <blockquote><p class="e">defined by Hue, Saturated, Light combination</p></blockquote>
+            <li>HSLA(w, x%, y%, z%) </li>
+            <blockquote><p class="f">defined by Hue, Saturated, Light, Alpha=blur combination with given importance</p></blockquote>
+        </ol>
+    </body>
+</html>
+
+
+<!-- exercise 5 paragraphs in div and first p should contaion background color:yellow,textcolor-red
+                remaining all should contain background color:blue,textcolor-white?
+                
+ 
+<html>
+    <head>
+        <style>
+            p:first-child{
+                background-color: yellow;
+                color: red;
+            }
+            P{
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>first child</p>
+            <p>second</p>
+            <p>third</p>
+            <p>fourth</p>
+            <p>fifth</p>
+        </div>
+    </body>
+</html>-->

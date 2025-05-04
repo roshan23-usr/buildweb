@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>selectors</title>
+        <style>
+            /*element selector*/
+            p{
+                background-color: aqua;
+                color: white;
+            }
+            /*class selector*/
+            .g{
+                background-color: green;
+            }
+            /*id selector*/
+            #i{
+                background-color: yellow;
+            }
+            /* universal selector*/
+           *{
+                font-family: 'Times New Roman';
+            }
+            /* attibute selector*/
+            [x=a]{
+                background-color: red;
+            }
+            /* child selector*/
+            div > p {
+                background-color: blueviolet;
+            }
+            /* desendent selector*/
+            div label{
+                background-color: chartreuse;
+            }
+            /* pseduo selector*/
+            /*1. visited selector*/
+            a:visited{
+                color: orange;
+            }
+            /*2. not visited selector*/
+            a:link{
+                color: green;
+            }
+            /*3. active selector*/
+            a:active{
+                background-color: rgb(245, 15, 141);
+            }
+            /*4. hover selector*/
+            a:hover{
+                background-color: rgb(225, 225, 26);
+            }
+            /*first-child  selector*/
+            p:first-child{
+                color:black;
+            }
+            /*attibute selector*/
+            H1{
+                text-align: start;
+                font-size:xx-large;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <h1>SELECTORS</h1>
+        <div>
+            <ol>
+                <li>element seclector</li>
+                <blockquote><p>style given based on element name</p></blockquote>
+                <li>class selector</li>
+                <blockquote><p class="g">style given based on class name</p></blockquote>
+                <li>id selector</li>
+                <blockquote><p id="i">style given based on #id </p></blockquote>
+                <li>universal selector *</li>
+                <blockquote><p>applecable for all seclectors </p></blockquote>
+                <li  x="a">attibute selector</li>
+        </ol>
+            </ol>
+        </div>
+        <div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.&nbsp;child selectors</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.&nbsp;child second</p>
+        </div>
+        <div>
+            <ul>
+                <li><label>desendent selector</label></li>
+            </ul>
+        </div>
+
+        <h1>psuedo selectors</h1>
+        <ol>
+            <li><a href="https:\\google.com" target="_blank" id="visited">open Google </a></li>
+            <li><a href="https:\\yahoo.com" target="_blank" id="link">open yahoo </a></li>
+            <li>pesudo active change color when click it</li>
+            <blockquote><a href="https:\\microsoftedge.com" target="_blank" id="active">open edge </a></blockquote>
+            <li>pesudo hover change color when cursior get it</li>
+            <blockquote><button><a href="https:\\firefox.com" target="_blank" id="hover">open firefox </a></button></blockquote>
+            
+    </body>
+</html>
