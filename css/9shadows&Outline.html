@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Shadows & Outliers</title>
+        <style>
+           
+            body{
+                background-color: #040404;
+            }
+            h1,p{
+                text-align: center;
+                color: white;
+            }
+            h2{
+                color: white;
+            }
+            #b{
+                border: 4px solid red;
+                box-shadow: 5px 5px 12px 5px red inset;
+            }
+            #a{
+                border: 4px solid red;
+                box-shadow: 5px 5px 12px 5px red;
+            }
+            .a{
+                text-align: start;
+            }
+            .b{
+                text-shadow: 10px 10px 1px yellow;
+                
+            }
+            .c{
+                
+                outline: 10px solid rgb(10, 165, 222);
+                outline-offset: 30px;
+                border: 2px dotted red;
+                border-radius: 10%;
+            }
+
+        </style>
+    </head>
+    <h1>SHADOWS</h1>
+    <h2>Box Shadow:</h2>
+    <blockquote><p class="a">syntax--box-shadow : h-offset v-offset blur spread color inste/outset(no mention);</p></blockquote>
+    <p id="b">BOX SHADOW inset</p><br/>
+    <p id="a">BOX SHADOW outset</p><br/>
+    <h2>Text Shadow:</h2>
+    <BLOckquote><P class="a">syntax--text-shadow : h-offset v-offset blur color; </P></BLOckquote>
+    <p class="b">JAI TELANGANA JAI BHEEM JAI BHARAT</p>
+    <h2>Outlines:</h2>
+    <blockquote><p class="a">syntax--outline : width style color;</p></blockquote><br/><br/>
+    <p class="c">JAI BHEEM</p>
+</html>
