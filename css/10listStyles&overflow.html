@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <title>List Styles & overflow prop
+    </title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        nav ul li {
+            border: 2px solid black;
+        }
+
+        .a ul li {
+            border: 2px solid black;
+            list-style: circle inside;
+            /* list-style: none; */
+            /* list-style-position: inside; */
+        }
+
+        .b ul li {
+            border: 2px solid black;
+            list-style: inside;
+            /* list-style-image: url(r2.jpg); */
+            list-style-type: style type;
+
+        }
+
+        /* overflow property */
+        .container {
+            border: 2px dotted black;
+            display: flex;
+            padding: 2px;
+            overflow: scroll;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 20vh;
+            width: 300px;
+            overflow: hidden;
+            margin: 2px;
+        }
+
+        .bo1 {
+            border: 2px solid black;
+            height: 20vh;
+            width: 300px;
+            overflow: scroll;
+            margin: 2px;
+        }
+
+        .bo2 {
+            border: 2px solid black;
+            height: 20vh;
+            width: 300px;
+            overflow: auto;
+            margin: 2px;
+            text-overflow: ellipsis;
+        }
+
+        .bo3 {
+            border: 2px solid black;
+            height: 20vh;
+            width: 300px;
+            overflow: auto;
+            margin: 2px;
+            white-space: nowrap;
+
+        }
+
+        .bo4 {
+            border: 2px solid black;
+            height: 20vh;
+            width: 300px;
+            overflow: scroll hidden;
+            margin: 2px;
+           
+        }
+        .bo5 {
+            border: 2px solid black;
+            height: 20vh;
+            width: 300px;
+            overflow: scroll hidden;
+            margin: 2px;
+            text-align: center;
+          
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LIST STYLES</h1>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>liked</li>
+            <li>saved</li>
+        </ul>
+    </nav>
+    <nav class="a">
+        <ul>
+            <li>Home</li>
+            <li>liked</li>
+            <li>saved</li>
+        </ul>
+    </nav>
+    <nav class="b">
+        <ul>
+            <li>Home</li>
+            <li>liked</li>
+            <li>saved</li>
+        </ul>
+    </nav>
+    <h1>overflow property</h1>
+    <div class="container">
+        <div class="box">
+            hiddenhiddhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenenhiddenhiddenhiddenhiddenhidden
+            hiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhidden
+            hiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhidden
+            hiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhidden
+            hiddenhiddhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenenhiddenhiddenhiddenhiddenhidden
+            hiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhidden
+            hiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhidden
+            hiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhiddenhidden
+        </div>
+        <div class="bo1">
+            scrool-scroscrool-scrool-scrool-ol-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scroscrool-scrool-scrool-ol-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scroscrool-scrool-scrool-ol-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+            scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-scrool-
+        </div>
+        <div class="bo2">
+            auto if required scrollbar will visible
+        </div>
+        <div class="bo3">
+            whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.
+            whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.
+            whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.whitespace-nowrap.
+        </div>
+        <div class="bo4">
+            hi
+        </div>
+         <div class="bo5">
+            jai telangana
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
