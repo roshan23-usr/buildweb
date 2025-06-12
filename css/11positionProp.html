@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <title>Position Prop</title>
+    <style>
+        body{
+            background-color: #a1887f ;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        /* relative */
+        .container1 {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 100px;
+            width: 80%;
+            margin: 4px auto;
+            padding: 10px;
+
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: darkgoldenrod;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+        }
+
+        .box3 {
+            background-color: fuchsia
+        }
+
+        /* Absolute */
+        .container2 {
+            border: 2px solid black;
+            padding: 40px;
+            position: relative;
+            /*  we can use this as position relative
+            transform: translate(0);
+            filter: invert(0);
+            perspective: 0; */
+
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 100px;
+            width: 80%;
+            margin: 4px auto;
+            padding: 10px;
+
+        }
+
+        .box4 {
+            background-color: aqua;
+
+        }
+
+        .box5 {
+            background-color: darkgoldenrod;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+
+
+        }
+
+        .box6 {
+            background-color: fuchsia
+        }
+
+        /* Sticky */
+        .container3 {
+            border: 2px solid black;
+            padding: 40px;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 100px;
+            width: 80%;
+            margin: 4px auto;
+            padding: 10px;
+
+        }
+
+        .box7 {
+            background-color: aqua;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        .box8 {
+            background-color: darkgoldenrod;
+
+
+        }
+
+        .box9 {
+            background-color: fuchsia
+        }
+
+        .box10 {
+            background-color: red;
+        }
+
+        /* Fixed */
+        .container4 {
+            border: 2px solid black;
+            padding: 40px;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 100px;
+            width: 80%;
+            margin: 4px auto;
+            padding: 10px;
+
+        }
+
+        .boxa {
+            background-color: aqua;
+
+        }
+
+        .boxb {
+            background-color: darkgoldenrod;
+            position: fixed;
+            bottom: 20px;
+            left: 10%;
+
+
+        }
+
+        .boxc {
+            background-color: fuchsia
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>POSITION PROPERTY</h1>
+    <h2>Relative:</h2>
+    <blockquote>we can change the position relatively.</blockquote>
+    <div class="container1">
+        <div class=" box box1">box 1</div>
+        <div class=" box box2">box 2</div>
+        <div class=" box box3">box 3</div>
+    </div>
+    <h2>Absolute:</h2>
+    <blockquote>follows the the closer parent position like container,body,html.</blockquote>
+    <div class="container2">
+        <div class=" box box4">box 4</div>
+        <div class=" box box5">box 5</div>
+        <div class=" box box6">box 6</div>
+    </div>
+    <h2>Sticky:</h2>
+    <blockquote>upcoming elements are stick to the element so it always visible.</blockquote>
+    <div class="container3">
+        <div class=" box box7">box 7 This is the sticky box</div>
+        <div class=" box box8">box 8</div>
+        <div class=" box box9">box 9</div>
+        <div class=" box box10">box 10</div>
+    </div>
+    <h2>Fixed:</h2>
+    <blockquote>fix a element position visible after the swipe of the parent also.</blockquote>
+    <div class="container4">
+        <div class=" box boxa">box a</div>
+        <div class=" box boxb">box b related to fixed position</div>
+        <div class=" box boxc">box c</div>
+    </div>
+
+</body>
+
+</html>
