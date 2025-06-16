@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>RESPONSIVE</title>
+        <style>
+            body{
+                background-color: orange;
+            }
+            .container{
+                display: flex;
+                align-items: center;
+            }
+            .item{
+                background-color: green;
+                height: 40px;
+                width: 40px;
+                padding: 20px;
+                margin: 20px;
+            }
+            @media only screen and (max-width:440px){
+                body{
+                    background-color: rgb(20, 9, 235);
+                }
+                .container{
+                    flex-direction: column;
+                }
+                .item{
+                    background-color: gold;
+                    height: 20px;width: 20px;
+                    padding: 10px;margin: 10px;
+                }
+            }
+                @media only screen and (orientation:landscape){
+                    .item{
+                        background-color: maroon;  /* height < width = landscape  &  opposite = potrait */
+                    }
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>CSS VARIABLES</title>
+    
+    <style>
+        *{
+            margin: 0;padding: 0;
+            /*GLOBAL VARIABLE */  
+            --fcolor:red;
+            --bor:2px solid black;
+            --a:rgb(51, 218, 51);
+        }
+       h1{
+        text-align: center;
+       }
+        .a{
+            background-color: var(--fcolor);
+             --pad:12px;        /*BLOCK-LEVEL VARIABLE */
+             --bod:10px solid rgb(241, 85, 85);
+            padding: var(--pad);
+            
+        }
+        .a ul{
+            display: flex;
+            padding: var(--pad);
+        }
+         .a ul li{
+            list-style-type:none;
+            padding: var(--pad);
+            border: var(--bod);
+        }
+        .b{
+            /* background-color: aqua;*/
+            border: var(--bor);
+            padding: 20px;
+            background-color: var(--a);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CSS VARIABLES</h1><br/>
+    <ol type="1">
+        <li><h4>block-level</h4></li>
+        <blockquote><p>Executes with in the block as parent child relation</p></blockquote><br/>
+        <li><h4>Global-level</h4></li>
+        <blockquote><p>Executes globally declared in universal (*)</p></blockquote>
+    </ol><br/>
+    <div class="a">
+        <ul>
+            <li>home</li>
+            <li>profile</li>
+            <li>download</li>
+        </ul></div><br/>
+        <div class="b">
+            <ul>
+                <li>home</li>
+                <li>profile</li>
+                <li>download</li>
+            </ul>
+        </div>
+</body>
+
+</html>
