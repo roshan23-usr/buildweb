@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>float & clear</title>
+    <style>
+        .boxes {
+            border: 2px solid black;
+            background-color: aqua;
+            display: flow-root;
+
+        }
+        .a{
+            float: right;
+            display: flow-root; /*float allows to float on elemnts*/
+            
+        }
+
+        .box {
+            border: 2px solid red;
+            background-color: white;
+        }
+        /* .box:nth-child(2){
+            clear:both;
+        } */
+        .box:nth-child(3){
+            clear:both;       /*clear restrict theb float elements to float on respected element*/
+        }
+        .box:nth-child(5){
+            clear:both;
+        }
+        .b{
+            float: left;
+        }
+         
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <img class="a" src="https://tse1.mm.bing.net/th?id=OIP.nz6D-hX-hfeTLtT4z-fOeQHaEK&pid=Api&P=0&h=180" alt="nature">
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit mollitia commodi non deserunt
+            ipsam, quia, a aliquid quaerat distinctio repellendus suscipit maxime aspernatur, libero iure.</div>
+        <div class="box ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea unde maxime voluptatum?
+            Iusto doloremque voluptatibus ipsum ullam explicabo aliquid blanditiis minus repellat omnis earum qui soluta
+            beatae optio a temporibus, dignissimos commodi repudiandae placeat odit ab unde dolorum. Nobis odio,
+            dignissimos voluptates mollitia blanditiis sunt dolores earum ad obcaecati suscipit impedit accusamus,
+            porro, temporibus provident ex? Itaque, ducimus numquam! Corporis aperiam aut, unde sit provident beatae
+            impedit repellendus cum error maxime facere laudantium qui exercitationem magnam harum accusantium deleniti
+            esse pariatur cumque soluta. Eos nemo dolores labore consectetur deserunt voluptates ipsa minus corrupti,
+            quibusdam aliquam odio aspernatur tenetur cumque possimus praesentium iste optio. Laudantium ab, dolores
+            necessitatibus repellendus unde amet? Eveniet nemo et animi tempore sapiente! Nisi laborum rem accusamus quo
+            temporibus blanditiis at, vitae assumenda incidunt similique. Deleniti perferendis reiciendis neque
+            architecto, cupiditate nesciunt, atque inventore deserunt corrupti accusantium sunt. Cupiditate totam dicta
+            suscipit praesentium, repudiandae rerum quas ab unde nobis dolorem inventore, iusto nemo provident odio
+            nulla quod cum maiores. Pariatur dolores laboriosam similique explicabo quaerat aliquam perspiciatis
+            incidunt velit numquam et, saepe cumque dolorum vel sapiente facilis enim? A recusandae et placeat odit
+            neque qui laborum incidunt repellendus. Inventore est recusandae architecto, aperiam libero quia facilis!
+        </div>
+       <img class="b" src="https://tse1.mm.bing.net/th?id=OIP.nz6D-hX-hfeTLtT4z-fOeQHaEK&pid=Api&P=0&h=180" alt="nature">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam expedita facilis minima
+            aliquam labore animi totam, laudantium quas facere?
+        </div>
+        
+    </div>
+</body>
+
+</html>

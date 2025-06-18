@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Advance Selectors</title>
+    <style>
+        .b:first-child {
+            color: red;
+        }
+
+        .b:nth-child(4) {
+            color: rgb(234, 100, 4);
+        }
+
+        .b:nth-last-child(1) {
+            color: rgb(65, 9, 248);
+        }
+
+        .b:nth-child(even) {
+            font-size: 40px;
+        }
+
+        .b:nth-child(odd) {
+            font-family: cursive;
+        }
+
+        .d::first-line {
+            color: rgb(250, 20, 250);
+            font-size: 20px;
+        }
+
+        .d::first-letter {
+            font-size: 40px;
+        }
+
+        /* dynamically inserting elements from css befor and after */
+        .C::before {
+            content: "TELANGANA";
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: block;
+        }
+
+        .c::after {
+            content: "JAI TELANGANA";
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: block;
+
+        }
+        .c *{
+            border: 2px solid black;
+            padding: 30px;
+        }
+       
+        ::selection{
+            color: red;
+            background-color: black;
+        }
+        .c::selection{
+            color: white;
+            background-color: black;
+        }
+        input{
+            height: 30px;
+            width: 100%;
+            border-radius: 20%;
+            margin-bottom: 4px;
+        }
+       input::placeholder{
+        color: black;
+        text-align: center;
+
+       }
+        
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">First</div>
+        <div class="b">Second</div>
+        <div class="b">Third</div>
+        <div class="b">Fourth</div>
+        <div class="b">Fifth</div>
+        <div class="b">Sixth</div>
+    </div>
+    <input type="text" placeholder="search about telangana">
+    <div class="c">
+        <div class="d">Telangana is a state in southern India, formed on June 2, 2014, as the 29th state of the country.
+            Hyderabad, a major IT and business hub, serves as its capital.
+            The region has a rich history, once part of the Nizam's Hyderabad State.
+            It is known for its distinct culture, language, and heritage sites.</div>
+        <div class="d">Agriculture plays a major role in Telangana's economy, with crops like
+            rice and cotton.
+            The state also has growing industries in IT, pharmaceuticals, and textiles.
+            The Godavari and Krishna rivers help irrigate much of the farmland.
+            Mission Bhagiratha and Kaleshwaram project are key water initiatives.</div>
+        <div class="d">Telangana celebrates festivals like Bathukamma and Bonalu with great enthusiasm.
+            Its cuisine is spicy and includes dishes like Hyderabadi biryani and sarva pindi.
+            Telugu is the official language, but Urdu and Hindi are also widely spoken.
+            The state blends tradition and modernity, attracting tourists and investors alike.</div>
+    </div>
+</body>
+
+</html>
