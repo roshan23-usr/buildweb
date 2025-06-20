@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>FLEXBOX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1 {
+            height: 40vh;
+            width: 80%;
+            border: 2px solid black;
+            margin-left: 10%;
+            margin-top: 5%;
+            /* flex */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* align-items: center; */
+            align-content: center;
+            flex-wrap: wrap;
+            /* flex-flow: column wrap;  flexflow: felx-direction flex-wrap */
+            /* gap: 20px; */
+            gap: 2px 20px;
+            
+
+
+        }
+
+        .item {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(247, 11, 11);
+            border: 2px solid black;
+            margin: 2px;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .a {
+            order: 2;
+            flex-grow: 7;
+            
+        }
+
+        .b {
+            order: 1;
+            flex-shrink: 2;
+        }
+
+        .container2 {
+            height: 40vh;
+            width: 80%;
+            border: 2px solid black;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            align-content: center;
+            flex-wrap: wrap;
+            gap: 20px 20px;
+            
+
+
+        }
+
+        .items {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(247, 11, 11);
+            border: 2px solid black;
+            margin: 2px;
+            color: white;
+            flex-grow: 2;
+
+        }
+        .c{
+            order: 2;
+            /* align-self:center; used without flex-wrap */
+        
+        }
+        .d{
+            order: 1;
+            flex-grow: 10;
+        }
+    </style>
+</head>
+
+<body>
+    row:
+    <div class="container1">
+        <div class="item">1</div>
+        <div class="item a">2</div>
+        <div class="item ">3</div>
+        <div class="item">4</div>
+        <div class="item b">5</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div><br /><br />column:
+    <div class="container2">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items c">3</div>
+        <div class="items d">4</div>
+        <div class="items">5</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>GRID</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container {
+            border: 2px solid rgb(21, 20, 20);
+            display: grid;
+            grid-template-columns: 100px 100px;
+            gap: 5px;
+            justify-content: center;
+            
+        }
+
+        .item {
+            height: 40px;
+            /* width: 40px; */
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .item3{
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+
+        .item4 {
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        .item5{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .container2{
+            height: 50vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [bunny] 100px [bintu] 100px [chinni] 100px[roshan];
+            grid-template-rows: 100px 100px 100px;
+            gap: 5px;
+            justify-content: center;
+            align-items: center; 
+            align-content: center;
+        }
+        .items{
+            height: 40px;
+            border: 2px solid black;
+            background-color: rgb(253, 253, 15);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .items4{
+            grid-column: bintu/chinni;
+        }
+        .items5{
+            grid-column: bunny/roshan ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GRID using Template-Colums/Rows</h1>
+    <h3>Grid : item positioning according to row-column number</h3>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        
+    </div>
+     <h3>Grid : item positioning according to row-column line-name</h3>
+    <div class="container2">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items items3">3</div>
+        <div class="items items4">4</div>
+        <div class="items items5">5</div>
+        
+    </div>
+</body>
+
+</html>
